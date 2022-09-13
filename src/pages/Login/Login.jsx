@@ -18,7 +18,6 @@ const Login = () => {
   return (
     <div>
       <Modal
-        closeButton
         blur
         aria-labelledby='modal-title'
         open
@@ -27,7 +26,7 @@ const Login = () => {
           <Text id='modal-title' size={18}>
             Welcome to
             <Text b size={18}>
-              NextUI
+              Firebase Client
             </Text>
           </Text>
         </Modal.Header>

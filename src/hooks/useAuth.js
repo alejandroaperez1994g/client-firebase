@@ -24,7 +24,7 @@ const useAuth = () => {
 
   const getBooks = async () => {
     const token = await getAccessToken()
-    const response = await fetch('http://localhost:4001/books', {
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_ENDPOINT}/books`, {
       headers: {
         Authorization: `Bearer ${token}`
       }

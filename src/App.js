@@ -36,24 +36,27 @@ function App () {
           bordered
         />
       </header>
-      <Button
-        onPress={retrieveBooks}
-        className='get_book_icon' icon={<Image
-          width={35}
-          height={35}
-          src={require('./assets/images/book.png')}
-          alt='Default Image'
-                                        />}
-      >
-        Get Books
-      </Button>
-      {books.data
-        ? books.data.map(book => {
-          return (
-            <h3 className='book_item' key={book._id}>📕 {book.title}</h3>
-          )
-        })
-        : <h1>No Books</h1>}
+      <div className='main_section'>
+        <Button
+          onPress={retrieveBooks}
+          className='get_book_icon' icon={<Image
+            width={35}
+            height={35}
+            src={require('./assets/images/book.png')}
+            alt='Default Image'
+                                          />}
+        >
+          Get Books
+        </Button>
+        {books.data
+          ? books.data.map(book => {
+            return (
+              <h3 className='book_item' key={book._id}>📕 {book.title}</h3>
+            )
+          })
+          : <h1>No Books</h1>}
+      </div>
+
     </div>
   )
 }
