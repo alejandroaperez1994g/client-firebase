@@ -7,7 +7,7 @@ This is a client developed in react for the connection with an api-rest making a
 ## Installation
 
 ```bash
-$ git clone https://github.com/assembler-school/nodejs-rest-api-design-intro-workshop.git
+$ git clone git@github.com:alejandroaperez1994g/client-firebase.git
 ```
 
 ```bash
